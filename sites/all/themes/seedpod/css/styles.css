@@ -1,0 +1,98 @@
+body{
+  /*background: yellow;*/
+  background: url('/sites/all/themes/assets/images/asanoha-400px.png');
+}
+/*menu effect does not work with tb mega menu !!!!*/
+#zone-user-wrapper{
+  background: #333333;
+}
+
+#main-menu li a, #secondary-menu li a{
+  background: #333333;
+  color: #F4F5F6;
+  position: relative;
+}
+
+
+#main-menu li a:before, #secondary-menu li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 10%;
+  left: 0;
+  background-color: #4FECD2;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#main-menu li a:hover:before, #secondary-menu li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/*end menu underline effect*/
+
+#section-content{
+  background: white;
+}
+#section-footer{
+  background: #333333;
+}
+/*#section-header{
+  height: 178px;
+  background: #333333;
+}
+#zone-user-wrapper {
+  height: 178px;
+  background: #333333;}*/
+/*for centering various elements*/
+.align-center{
+  text-align: center;
+}
+
+.site-name a{
+  font-family: 'Special Elite', cursive !important;
+  color: black !important;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 168%;
+  text-shadow: 3px 3px 2px white, 3px 3px 2px black;
+}
+.site-slogan{
+  color: black !important;
+  font-style: italic;
+}
+#logo{
+  height: 126px;
+}
+p, span {
+  font-family: 'Josefin Slab', serif !important;
+}
+
+#region-branding{
+  text-align: center !important;
+  background: url('/sites/all/themes/assets/images/geometric-logo.png') center center no-repeat;
+  background-size: contain;
+}
+.site-name-slogan{
+  float: none !important;
+}
+
+ .view-header{
+  background-position:  center center  !important;
+}
+.taxonomy-title, .item-list a{
+  font-family: 'Special Elite', cursive !important;
+  color: inherit !important;
+}
+
+article{
+  text-align: center;
+  /*padding: 24px;*/
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  padding: 24px !important;
+}
